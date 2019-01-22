@@ -16,6 +16,7 @@ public class Author {
     private Long id;
     private String firstName;
     private String lastName;
+    private int code;
 
     @ManyToMany (mappedBy = "authors")
     private Set<Book> books  = new HashSet<>();
